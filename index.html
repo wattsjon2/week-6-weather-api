@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="js/main.js" defer></script>
+<title>Weather API</title>
+</head>
+<style>
+
+  </style>
+<body>
+
+    <section class="vh-100 ">
+        <div class="container h-100 ">
+      
+          <div class="row d-flex justify-content-center align-items-center h-100 ">
+            <div class="col-md-8 col-lg-8 col-xl-8 ">
+      
+              <h3 class="mb-4 pb-2 fw-normal text-center">Check the weather forecast</h3>
+      
+              <div class="input-group rounded mb-3">
+                <form name="testData" id="testDataForm" class="rounded mb-3">
+                    
+                    <input type="text" name="cityInput" placeholder="city" id="cityInput">
+            
+                    <button class="btn btn-primary" type="submit" id="submitButton">Get Weather</button>
+                    <button class="btn btn-success" onclick="getLoc()">Use Location</button>
+                </form>
+              </div>
+      
+      
+              <div class="card shadow-0 border bg-secondary text-white" >
+                <div class="card-body p-4">
+                    
+                    <ul class="list-unstyled">
+                        <li>City: <span></span></li>
+                        <li>Coordinates: <span></span></li>
+                    </ul>
+                    <p>Forcast: <span></span><span><img src=""></img></span> </p>
+                    <ul class="list-unstyled">
+                        <li>Temperature: <span></span></li>
+                        <li>Feels Like: <span></span></li>
+                        <li>High: <span></span></li>
+                        <li>Low: <span></span></li>
+                    </ul>
+                    <p>Wind: <span></span><span></span> <span></span>  </p>
+                    
+                    <p>Pressure: <span></span></p>
+                    <p>Humidity: <span></span></p>
+                  </div>
+      
+                </div>
+              </div>
+      
+            </div>
+          </div>
+      
+        </div>
+      </section>
+    
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
